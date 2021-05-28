@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: infra-apps-prod
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: 2048-game-qa
+    name: in-cluster
+  project: prod
+  source:
+    # path: apps/2048-game/kustomized_helm/overlays/qa
+    path: apps/infra
+    repoURL: https://github.com/knkarthik/argo-test.git
+    targetRevision: HEAD
+    # plugin:
+    #   name: kustomized-helm
