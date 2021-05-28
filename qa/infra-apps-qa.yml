@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: sealed-secrets-prod
+  name: infra-apps-qa
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: default
+    namespace: 2048-game-qa
     name: in-cluster
-  project: prod
+  project: qa
   source:
     # path: apps/2048-game/kustomized_helm/overlays/qa
-    path: apps/infra/sealed-secrets/overlays/prod
+    path: apps/infra/qa
     repoURL: https://github.com/knkarthik/argo-test.git
     targetRevision: HEAD
     # plugin:

@@ -4,5 +4,4 @@ kind: Kustomization
 bases:
 - ../../base
 
-commonLabels:
-  qa: "true"
+nameSuffix: -qa
