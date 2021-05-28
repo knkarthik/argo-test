@@ -10,9 +10,9 @@ resources:
 - namespace.yml
 
 images:
-- name: <acr_name>.azurecr.io/<repo_name>:<image_tag>
-  newName: <new_name_here>
-  newTag: <new_tag_here>
+- name: blah-blah:blah
+  newName: alexwhen/docker-2048
+  newTag: latest
 
 patchesJson6902:
 - target:
