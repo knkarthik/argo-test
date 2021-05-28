@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: 2048-game-app-qa
+  name: nginx-qa
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
