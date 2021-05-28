@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: default
     name: in-cluster
-  project: qa
+  project: prod
   source:
     # path: apps/2048-game/kustomized_helm/overlays/qa
     path: apps/infra/prod
