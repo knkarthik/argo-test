@@ -12,7 +12,7 @@ spec:
   project: qa
   source:
     # path: apps/2048-game/kustomized_helm/overlays/qa
-    path: apps/infra/argocd/overlays/qa
+    path: apps/infra/argo-cd/overlays/qa
     repoURL: https://github.com/knkarthik/argo-test.git
     targetRevision: HEAD
     plugin:
