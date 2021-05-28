@@ -1,16 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root-app-qa
+  name: argocd-qa
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: default
+    namespace: argocd
     name: in-cluster
   project: qa
   source:
-    path: qa
+    # path: apps/2048-game/kustomized_helm/overlays/qa
+    path: apps/infra/argocd/overlays/qa
     repoURL: https://github.com/knkarthik/argo-test.git
     targetRevision: HEAD
+    plugin:
+      name: kustomized-helm
