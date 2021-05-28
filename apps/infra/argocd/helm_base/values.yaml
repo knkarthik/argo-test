@@ -110,7 +110,7 @@ argo-cd:
     ## Node selectors and tolerations for server scheduling to nodes with taints
     ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
     ##
-    nodeSelector: []
+    # nodeSelector: []
     tolerations: []
     affinity: {}
 
@@ -239,7 +239,7 @@ argo-cd:
     ## Node selectors and tolerations for server scheduling to nodes with taints
     ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
     ##
-    nodeSelector: []
+    # nodeSelector: []
     tolerations: []
     affinity: {}
 
@@ -288,7 +288,7 @@ argo-cd:
     ## Node selectors and tolerations for server scheduling to nodes with taints
     ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
     ##
-    nodeSelector: []
+    # nodeSelector: []
     tolerations: []
     affinity: {}
 
@@ -338,9 +338,7 @@ argo-cd:
         enabled: true
     image:
       tag: 5.0.8-alpine
-    nodeSelector:
-      argo: "true"
-
+    # nodeSelector: []
   ## Server
   server:
     name: server
@@ -409,7 +407,7 @@ argo-cd:
     ## Node selectors and tolerations for server scheduling to nodes with taints
     ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
     ##
-    nodeSelector: []
+    # nodeSelector: []
     tolerations: []
     affinity: {}
 
@@ -750,7 +748,7 @@ argo-cd:
     ## Node selectors and tolerations for server scheduling to nodes with taints
     ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
     ##
-    nodeSelector: []
+    # nodeSelector: []
     tolerations: []
     affinity: {}
 
